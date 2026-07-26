@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>character-counter</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <form id="message-form">
+      <label for="message">メッセージ</label>
+
+      <textarea
+        id="message"
+        rows="6"
+        maxlength="120"
+      ></textarea>
+
+      <p id="character-count">0 / 100</p>
+      <p id="error-message" hidden></p>
+
+      <button id="submit-button" type="submit" disabled>
+        送信
+      </button>
+    </form>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

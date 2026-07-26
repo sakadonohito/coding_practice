@@ -1,1 +1,56 @@
+resume.txt
+
+# OS / Editor
 .DS_Store
+.vscode/
+.idea/
+
+# Emacs
+\#*\#
+*~
+.\#*
+
+# Node.js / TypeScript
+node_modules/
+dist/
+.next/
+coverage/
+
+# Haskell
+.stack-work/
+dist/
+dist-newstyle/
+*.o
+*.hi
+
+# Rust
+target/
+
+# Python
+__pycache__/
+.venv/
+.pytest_cache/
+
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+
+# F# / .NET
+bin/
+obj/
+
+# Clojure
+.clj-kondo/.cache/
+.cpcache/
+target/
+
+# Swift
+.build/
+.swiftpm/
+
+# Kotlin / Java
+.gradle/
+build/

@@ -1,0 +1,42 @@
+name:                sample
+version:             0.1.0.0
+license:             BSD-3-Clause
+author:              "Author name here"
+maintainer:          "example@example.com"
+extra-source-files:
+- README.md
+- CHANGELOG.md
+
+ghc-options:
+- -Wall
+- -Wcompat
+- -Widentities
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wmissing-export-lists
+- -Wmissing-home-modules
+- -Wpartial-fields
+- -Wredundant-constraints
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
+
+executables:
+  sample:
+    main:                Main.hs
+    source-dirs:         app
+    dependencies:
+    - sample
+
+tests:
+  sample-test:
+    main:                Spec.hs
+    source-dirs:         test
+    dependencies:
+    - sample
+    - hspec
+
+github:              githubuser/sample
