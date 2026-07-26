@@ -1,0 +1,17 @@
+package order
+
+type OrderItem struct {
+	Name string
+	Price int
+	Quantity int
+}
+
+func CalculateTotal(items []OrderItem) int {
+	total := 0
+
+	for _, item := range items {
+		total += item.Price * item.Quantity
+	}
+
+	return total
+}
