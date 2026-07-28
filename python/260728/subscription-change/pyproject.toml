@@ -1,0 +1,32 @@
+[project]
+name = "subscription-change"
+version = "0.1.0"
+description = "Subscription plan change practice"
+readme = "README.md"
+authors = [
+    { name = "sakadonohito", email = "452383+sakadonohito@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1,<10",
+]
+
+[project.scripts]
+subscription-change = "subscription_change.main:main"
+
+[build-system]
+requires = ["uv_build>=0.11.32,<0.12.0"]
+#requires = ["uv_build>=0.8.15,<0.9.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "-ra",
+]
