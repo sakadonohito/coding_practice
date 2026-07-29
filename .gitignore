@@ -1,3 +1,4 @@
+.DS_Store
 resume.txt
 
 # ==========================================
@@ -7,11 +8,17 @@ resume.txt
 .env.local
 
 # ==========================================
-# IDE / エディタ / OS
+# IDE / エディタ設定 (IntelliJ, Eclipse, VS Code)
 # ==========================================
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
 .idea/
 .vscode/
-.DS_Store
+
 
 # Emacs
 \#*\#
@@ -61,9 +68,17 @@ target/
 .build/
 .swiftpm/
 
-# Kotlin / Java
+# ==========================================
+# Java / Kotlin / Gradle ビルド成果物・キャッシュ
+# ==========================================
+# Gradle の一時キャッシュフォルダ
 .gradle/
+
+# ビルド出力ディレクトリ (.class ファイル、テストレポートなど)
 build/
+
+# Java コンパイル成果物
+*.class
 
 # ==========================================
 # PHP / Composer
