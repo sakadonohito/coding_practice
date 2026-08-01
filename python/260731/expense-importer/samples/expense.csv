@@ -1,0 +1,5 @@
+transaction_id,spent_on,description,category,amount
+TX-001,2026-07-01,新幹線代,travel,14850
+TX-002,2026-07-02,昼食,food,1200
+TX-003,2026-07-03,プリンター用紙,supplies,980
+TX-004,2026-07-05,顧客訪問タクシー,travel,3400
