@@ -1,0 +1,8 @@
+[project]
+name = "markdownviewer"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "markdown>=3.10.3",
+    "pygments>=2.20.0",
+]
