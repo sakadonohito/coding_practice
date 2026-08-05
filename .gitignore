@@ -70,12 +70,14 @@ target/
 # Swift
 .build/
 .swiftpm/
+.build-*/
 
 # ==========================================
 # Java / Kotlin / Gradle ビルド成果物・キャッシュ
 # ==========================================
 # Gradle の一時キャッシュフォルダ
 .gradle/
+.gradle-user-home/
 
 # ビルド出力ディレクトリ (.class ファイル、テストレポートなど)
 build/
