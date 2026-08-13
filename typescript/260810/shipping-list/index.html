@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>買い物メモ</title>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <main class="app">
+      <h1>買い物メモ</h1>
+
+      <form id="item-form" action="/" method="post">
+        <div class="field">
+          <label for="item-name">商品名</label>
+          <p id="item-hint" class="hint">40文字以内で入力してください</p>
+          <input
+            id="item-name"
+            name="itemName"
+            type="text"
+            required
+            maxlength="40"
+            autocomplete="off"
+            aria-describedby="item-hint status-message"
+          >
+        </div>
+
+        <button type="submit">商品を追加</button>
+      </form>
+
+      <p
+        id="status-message"
+        class="status-message"
+        aria-live="polite"
+        aria-atomic="true"
+      ></p>
+
+      <section aria-labelledby="list-heading">
+        <h2 id="list-heading">追加した商品</h2>
+        <ul id="item-list"></ul>
+      </section>
+    </main>
+  </body>
+</html>

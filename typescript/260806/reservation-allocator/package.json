@@ -1,0 +1,27 @@
+{
+  "name": "reservation-allocator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start": "node dist/main.js",
+    "check": "npm run typecheck && npm run test && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+    "engines": {
+    "node": ">=24.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  }
+}

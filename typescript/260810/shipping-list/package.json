@@ -1,0 +1,29 @@
+{
+  "name": "shipping-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test:unit": "vitest run --environment jsdom tests/",
+    "test:unit:watch": "vitest --environment jsdom tests/",
+    "test:e2e": "PLAYWRIGHT_BROWSERS_PATH=.cache/ms-playwright playwright test",
+    "test": "npm run test:unit && npm run test:e2e",
+    "check": "npm run build && npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^24.13.3",
+    "jsdom": "^30.0.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.1",
+    "vitest": "^4.1.10"
+  }
+}
