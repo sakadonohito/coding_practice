@@ -1,0 +1,7 @@
+{application, order_summary, [
+    {description, "Order summary practice"},
+    {vsn, "0.1.0"},
+    {modules, [order_summary]},
+    {registered, []},
+    {applications, [kernel, stdlib]}
+]}.
