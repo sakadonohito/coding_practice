@@ -1,0 +1,12 @@
+{:paths ["src"]
+
+ :deps
+ {org.clojure/clojure {:mvn/version "1.12.5"}}
+
+ ;; Maven依存の保存先をプロジェクト内へ限定する。
+ :mvn/local-repo ".cache/m2/repository"
+
+ :aliases
+ {:test
+  {:extra-paths ["test"]
+   :main-opts ["-m" "subscription-billing.test-runner"]}}}
